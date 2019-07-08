@@ -1,0 +1,13 @@
+.news-panel {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.news-item {
+  margin: 2% 1%;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 30%;
+  height: 420px;
+}

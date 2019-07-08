@@ -1,0 +1,24 @@
+<div class="news-content">
+  <div class="news-image">
+    <a target="_blank" [href]="news.link"><img [src]="news.imageSrc"/></a>
+  </div>
+  <div class="news-body">
+    <div class="news-body-main">
+      <div class="news-title">
+        <a target="_blank" [href]="news.link">
+          <span>{{ news.title }}</span>
+        </a>
+      </div>
+    </div>
+    <div class="news-body-footer">
+      <div class="news-source">
+        <a [href]="news.source.webSite" target="_blank">{{
+          news.source.name
+        }}</a>
+      </div>
+      <div class="news-pubdate">
+        <span>{{ news.newsDate }}</span>
+      </div>
+    </div>
+  </div>
+</div>

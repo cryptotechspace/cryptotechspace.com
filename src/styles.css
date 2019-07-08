@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f8ff;
+  margin: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  color: grey;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+header {
+  height: 210px;
+  width: 100%;
+}
+
+header .header-content {
+  background-color: #253137;
+  height: 75%;
+}
+
+header .header-nav {
+  background: #fabf2c;
+  height: 25%;
+}
+
+span.title {
+  font-size: 34px;
+  color: #fabf2c;
+}
+
+.header-content .container {
+  padding-top: 10px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    width: 1470px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: #253137;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: #253137;
+  color: #fff;
+}
+
+.centered {
+  margin: 0 auto;
+  display: block;
+}
