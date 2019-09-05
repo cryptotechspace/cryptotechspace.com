@@ -1,4 +1,4 @@
-import { newsSource } from "./newsSource";
+import { NewsSource } from './newsSource';
 
 export class News {
   id: number;
@@ -7,5 +7,5 @@ export class News {
   imageSrc: string;
   pubTime;
   newsDate: string;
-  newsSource: newsSource;
+  newsSource: NewsSource;
 }

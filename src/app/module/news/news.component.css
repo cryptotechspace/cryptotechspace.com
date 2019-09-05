@@ -1,0 +1,12 @@
+.news-pane {
+  margin: 60px 0;
+}
+
+.news-pane-title {
+  width: 20%;
+}
+
+.news-pane-title span {
+  font-weight: bold;
+  font-size: 35px;
+}

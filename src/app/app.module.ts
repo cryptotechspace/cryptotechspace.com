@@ -1,23 +1,21 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { HttpClientModule } from "@angular/common/http";
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { NewsListComponent } from "./news-list/news-list.component";
-import { NewsDetailComponent } from "./news-detail/news-detail.component";
-import { NewsPaneComponent } from "./news-pane/news-pane.component";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { NewsComponent } from './module/news/news.component';
+import { NewsModule } from './module/news/news.module';
+import { ArticlesModule } from './module/articles/articles.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NewsListComponent,
-    NewsDetailComponent,
-    NewsPaneComponent
+    AppComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, NewsModule, ArticlesModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
