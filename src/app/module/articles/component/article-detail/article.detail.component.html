@@ -1,0 +1,24 @@
+<div class="article-content">
+    <div class="article-image">
+        <a target="_blank" [href]="article.link"><img [src]="article.imageSrc" /></a>
+    </div>
+    <div class="article-body">
+        <div class="article-body-main">
+            <div class="article-title">
+                <a target="_blank" [href]="article.link">
+                    <span>{{ article.title }}</span>
+                </a>
+            </div>
+        </div>
+        <div class="article-body-footer">
+            <div class="article-source">
+                <a [href]="article.source.webSite" target="_blank">{{
+          article.source.name
+        }}</a>
+            </div>
+            <div class="article-pubdate">
+                <span>{{ article.newsDate }}</span>
+            </div>
+        </div>
+    </div>
+</div>

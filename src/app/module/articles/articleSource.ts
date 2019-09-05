@@ -1,4 +1,4 @@
-export class NewsSource {
+export class ArticleSource {
   sourceId: number;
   name: string;
   webSite: string;

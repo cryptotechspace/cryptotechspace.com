@@ -1,0 +1,42 @@
+.article-image img {
+  height: 300px;
+  width: 100%;
+}
+
+.news-content {
+  padding-bottom: 5%;
+}
+
+.article-body {
+  padding: 2% 5%;
+
+  height: 90px;
+}
+
+.article-body-footer {
+  margin-top: 20px;
+}
+
+div.article-source {
+  float: left;
+}
+
+div.article-pubdate {
+  float: right;
+}
+
+.article-body a {
+  text-decoration: none;
+  color: #27282d;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.article-body a:hover {
+  text-decoration-line: underline;
+}
+
+.article-body .news-source a {
+  font-size: 14px;
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Article } from 'src/app/module/articles/article';
 
-import { News } from '../../news';
+
 
 @Component({
   selector: 'app-news-detail',
@@ -8,7 +9,7 @@ import { News } from '../../news';
   styleUrls: ['./news-detail.component.css']
 })
 export class NewsDetailComponent implements OnInit {
-  @Input() news: News;
+  @Input() news: Article;
   constructor() { }
 
   ngOnInit() {
@@ -16,7 +17,7 @@ export class NewsDetailComponent implements OnInit {
       this.news.pubTime.dayOfMonth + ' ' +
       this.news.pubTime.month + ' ' +
       this.news.pubTime.year + ' ' +
-      this.news.pubTime.hour + ' ' +
+      this.news.pubTime.hour + ':' +
       this.news.pubTime.minute;
   }
 }
