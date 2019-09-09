@@ -1,0 +1,6 @@
+<div class="tweets">
+    <div class="tweet" *ngFor="let tweet of tweets">
+        <div class="tweet-headline"><img [src]="tweet.publisher.profilePicture" />{{tweet.publisher.userName}}</div>
+        <div class="tweet-content"><a target="_blank" [href]="tweet.url">{{tweet.text}}</a></div>
+    </div>
+</div>
