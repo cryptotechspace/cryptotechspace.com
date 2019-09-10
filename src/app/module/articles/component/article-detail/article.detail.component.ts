@@ -9,17 +9,9 @@ import { Article } from '../../article';
         styleUrls: ['./article.detail.component.css']
     }
 )
-export class ArticleDetailComponent implements OnInit {
+export class ArticleDetailComponent {
 
     @Input() article: Article;
 
-    ngOnInit() {
-        this.article.newsDate =
-            this.article.pubTime.dayOfMonth + ' ' +
-            this.article.pubTime.month + ' ' +
-            this.article.pubTime.year + ' ' +
-            this.article.pubTime.hour + ':' +
-            this.article.pubTime.minute;
-    }
 
 }
