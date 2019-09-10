@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NewsModule } from './module/news/news.module';
 import { ArticlesModule } from './module/articles/articles.module';
 import { TweetsModule } from './module/tweets/tweets.module';
+import { PipesModule } from './component/pipes/pipes.module';
 
 
 

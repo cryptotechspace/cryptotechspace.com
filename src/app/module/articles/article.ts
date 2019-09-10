@@ -6,6 +6,5 @@ export class Article {
   link: string;
   imageSrc: string;
   pubTime;
-  newsDate: string;
   articleSource: ArticleSource;
 }

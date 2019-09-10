@@ -5,10 +5,11 @@ import { NewsListComponent } from './component/news-list/news-list.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticlesModule } from '../articles/articles.module';
+import { PipesModule } from 'src/app/component/pipes/pipes.module';
 
 
 @NgModule({
-    imports: [CommonModule, HttpClientModule, ArticlesModule],
+    imports: [CommonModule, HttpClientModule, ArticlesModule, PipesModule],
     declarations: [NewsComponent, NewsDetailComponent, NewsListComponent],
     exports: [NewsListComponent, NewsDetailComponent]
 })

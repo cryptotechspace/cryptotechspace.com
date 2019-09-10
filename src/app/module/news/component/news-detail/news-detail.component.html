@@ -1,6 +1,6 @@
 <div class="news-content">
   <div class="news-image">
-    <a target="_blank" [href]="news.link"><img [src]="news.imageSrc"/></a>
+    <a target="_blank" [href]="news.link"><img [src]="news.imageSrc" /></a>
   </div>
   <div class="news-body">
     <div class="news-body-main">
@@ -17,7 +17,7 @@
         }}</a>
       </div>
       <div class="news-pubdate">
-        <span>{{ news.newsDate }}</span>
+        <span>{{ news.pubTime | localDateTime }}</span>
       </div>
     </div>
   </div>

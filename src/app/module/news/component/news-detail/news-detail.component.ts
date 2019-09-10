@@ -8,16 +8,8 @@ import { Article } from 'src/app/module/articles/article';
   templateUrl: './news-detail.component.html',
   styleUrls: ['./news-detail.component.css']
 })
-export class NewsDetailComponent implements OnInit {
+export class NewsDetailComponent {
   @Input() news: Article;
   constructor() { }
 
-  ngOnInit() {
-    this.news.newsDate =
-      this.news.pubTime.dayOfMonth + ' ' +
-      this.news.pubTime.month + ' ' +
-      this.news.pubTime.year + ' ' +
-      this.news.pubTime.hour + ':' +
-      this.news.pubTime.minute;
-  }
 }
