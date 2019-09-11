@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { NewsComponent } from './module/news/news.component';
 import { ArticlesComponent } from './module/articles/articles.component';
 import { TweetsComponent } from './module/tweets/tweets.component';
+import { VideosComponent } from './module/videos/videos.component';
 
 const routes: Routes = [
   { path: 'articles', component: ArticlesComponent },
   { path: 'news', component: NewsComponent },
   { path: 'tweets', component: TweetsComponent },
+  { path: 'videos', component: VideosComponent },
   { path: '', redirectTo: 'news', pathMatch: 'full' }
 ];
 

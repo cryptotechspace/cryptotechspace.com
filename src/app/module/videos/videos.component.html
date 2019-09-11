@@ -1,0 +1,29 @@
+<div class="videos">
+    <div class="video" *ngFor="let video of videos">
+        <div class="video-headline">
+            <div>
+                <a target="_blank" [href]="video.publisherUrl">{{video.publisherName}}</a> -
+                {{video.publishingDate | date:'medium' }}
+            </div>
+            <div class="video-source">
+                <a target="_blank" [href]="video.source.url">{{ video.source.sourceName }}</a>
+            </div>
+        </div>
+        <div class="video-content">
+            <div>
+                <a target="_blank" [href]="video.url"><img [src]="video.thumbnailUrl" /></a>
+            </div>
+            <div class="video-content-main">
+                <div class="video-content-title">
+                    <a target="_blank" [href]="video.url"><span class="video-title"
+                            [innerHtml]="video.title"></span></a>
+                </div>
+                <div class="video-content-descr">
+                    <a target="_blank" [href]="video.url"><span class="video-descr"
+                            [innerHtml]="video.description"></span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

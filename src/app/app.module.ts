@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { NewsModule } from './module/news/news.module';
 import { ArticlesModule } from './module/articles/articles.module';
 import { TweetsModule } from './module/tweets/tweets.module';
-import { PipesModule } from './component/pipes/pipes.module';
+import { VideosModule } from './module/videos/videos.module';
+
 
 
 
@@ -16,7 +17,7 @@ import { PipesModule } from './component/pipes/pipes.module';
   declarations: [
     AppComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonModule, NewsModule, ArticlesModule, TweetsModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, NewsModule, ArticlesModule, TweetsModule, VideosModule],
   providers: [],
   bootstrap: [AppComponent]
 })
