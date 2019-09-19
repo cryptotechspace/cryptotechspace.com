@@ -9,6 +9,7 @@ import { NewsModule } from './module/news/news.module';
 import { ArticlesModule } from './module/articles/articles.module';
 import { TweetsModule } from './module/tweets/tweets.module';
 import { VideosModule } from './module/videos/videos.module';
+import { RedditModule } from './module/reddit/reddit.module';
 
 
 
@@ -17,7 +18,7 @@ import { VideosModule } from './module/videos/videos.module';
   declarations: [
     AppComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonModule, NewsModule, ArticlesModule, TweetsModule, VideosModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, NewsModule, ArticlesModule, TweetsModule, VideosModule, RedditModule],
   providers: [],
   bootstrap: [AppComponent]
 })
