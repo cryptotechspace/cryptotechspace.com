@@ -113,3 +113,15 @@ nav ul li a:hover {
   margin: 0 auto;
   display: block;
 }
+
+.flex{
+  display: flex;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.mr-5{
+  margin-right: 5em;
+}
