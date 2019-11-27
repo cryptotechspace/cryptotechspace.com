@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  serverURL: 'http://cryptotechspace.com:8080/'
+  serverURL: 'https://api.cryptotechspace.com/'
 };
 
 /*
