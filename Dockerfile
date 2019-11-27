@@ -1,4 +1,4 @@
-FROM cryptotechspace/cryptotechspace-nginx:0.0.1
+FROM cryptotechspace/cryptotechspace-nginx:0.0.2
 
 ARG BUILD_DATE
 ARG VERSION
